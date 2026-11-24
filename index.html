@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#001f33">
-  <meta name="description" content="QI Data Lab explores trustworthy digital quality infrastructure at BAM: verifiable credentials, digital reference material documents, interoperable data and evidence-grounded AI.">
-  <title>QI Data Lab — Research for trustworthy digital quality</title>
+  <meta name="description" content="QI Data Lab researches three pillars toward Agentic QI at BAM: digital documents and vocabularies, interoperable infrastructure, and evidence-grounded AI. Explore projects and publications.">
+  <title>QI Data Lab — Three research pillars toward Agentic QI</title>
   <style>
     :root { --ink:#09202d; --deep:#081d2a; --deep2:#102c3b; --mint:#b8f173; --teal:#0e9b9c; --paper:#f7f9f8; --line:#d9e1df; --muted:#526672; --white:#fff; }
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--paper);font-size:16px;line-height:1.6} a{color:inherit;text-decoration:none} a:focus-visible,button:focus-visible{outline:3px solid #30bdca;outline-offset:5px} button{font:inherit} h1,h2,h3,p{margin-top:0} h1,h2,h3{letter-spacing:-.045em;line-height:1.08} p{line-height:1.75} ::selection{background:var(--mint);color:var(--deep)}
@@ -118,6 +118,49 @@
     @media(max-width:540px){.brand{min-width:0}.nav-cta{display:none}.mobile-toggle{margin-left:auto}.schematic-top{flex-wrap:wrap}.flow-stack{grid-template-columns:1fr;gap:8px}.flow-card{flex-direction:row;align-items:center;min-height:0;padding:10px 12px;gap:12px}.flow-icon{flex:none}.flow-card strong{font-size:.86rem}.flow-card small{font-size:.74rem}.schematic-bottom{flex-wrap:wrap}.hero-affiliation>span{flex-basis:100%}}
     @media(max-width:540px){.hero-projects{padding:13px}.hero-projects-head{flex-wrap:wrap;gap:3px}.hero-projects-head span{width:100%}.hero-project{grid-template-columns:42px minmax(0,1fr);gap:10px;padding:13px;min-height:0}.hero-project-icon{width:42px;height:42px}.hero-project-icon svg{width:23px;height:23px}.hero-project-title{font-size:1.26rem}.hero-project-description{font-size:.82rem}.hero-project-type{padding-right:0;max-width:190px}.hero-project-badge{right:10px;top:9px}}
     @media(max-width:390px){.hero h1{font-size:2.22rem}.brand-copy small{display:none}}
+    /* Research strategy: three connected pillars with Agentic QI as the goal. */
+    .work .section-heading{margin-bottom:29px}
+    .work .section-heading h2{max-width:790px}
+    .pillar-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+    .pillar{display:flex;flex-direction:column;padding:27px 25px 24px;background:#f8fbfd;border:1px solid #cbdde8;border-radius:11px;border-top:4px solid #009ee3;min-width:0}
+    .pillar:nth-child(2){border-top-color:#d40f14}
+    .pillar:nth-child(3){border-top-color:#005268}
+    .pillar-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px}
+    .pillar-number{font:740 .76rem/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;color:#41677b}
+    .pillar-symbol{width:31px;height:31px;color:#005268}
+    .pillar h3{font-size:1.5rem;line-height:1.2;margin:0 0 12px;letter-spacing:-.035em}
+    .pillar>p{font-size:.92rem;line-height:1.65;color:#476271;margin:0 0 18px}
+    .pillar-topics{list-style:none;padding:15px 0 0;margin:auto 0 18px;border-top:1px solid #dce8ee;display:grid;gap:9px}
+    .pillar-topics li{font-size:.85rem;line-height:1.45;color:#24495d;padding-left:16px;position:relative}
+    .pillar-topics li:before{content:"";position:absolute;left:0;top:.58em;width:6px;height:6px;background:#009ee3;border-radius:1px}
+    .pillar:nth-child(2) .pillar-topics li:before{background:#d40f14}
+    .pillar-links{display:flex;flex-wrap:wrap;gap:8px 15px;margin-top:auto}
+    .pillar-links a{font-size:.79rem;line-height:1.5;color:#005268;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+    .pillar-links a:hover{color:#b30b10}
+    .research-goal{margin-top:20px;display:grid;grid-template-columns:175px minmax(0,1fr);gap:27px;align-items:center;padding:23px 29px;background:#001f33;color:#fff;border-radius:11px;border-left:5px solid #d40f14}
+    .research-goal-label{display:flex;flex-direction:column;gap:3px}
+    .research-goal-label small{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:#9bcfe7;font-weight:800}
+    .research-goal-label strong{font-size:1.5rem;letter-spacing:-.035em;line-height:1.18}
+    .research-goal p{font-size:.94rem;color:#d0e6ef;line-height:1.65;margin:0}
+    /* Publications form a compact, browsable reading list. */
+    .publications{background:#fff}
+    .publications .section-heading{margin-bottom:30px}
+    .publications .section-heading h2{font-size:clamp(2.4rem,4vw,3.6rem)}
+    .publication-list{border-top:1px solid #cadbe5}
+    .publication{display:grid;grid-template-columns:120px minmax(0,1fr) 128px;gap:24px;padding:23px 0;border-bottom:1px solid #cadbe5;align-items:start}
+    .publication-meta{display:flex;flex-direction:column;gap:5px}
+    .publication-year{font:760 1.24rem/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;color:#005268}
+    .publication-type{font-size:.74rem;color:#617b8a;font-weight:720}
+    .publication h3{font-size:1.12rem;line-height:1.4;letter-spacing:-.02em;margin:0 0 7px}
+    .publication p{font-size:.88rem;line-height:1.55;color:#506a79;margin:0}
+    .publication-venue{font-style:italic;margin-top:6px!important}
+    .publication-link{justify-self:end;font-size:.83rem;font-weight:780;color:#005268;text-decoration:underline;text-underline-offset:4px;text-align:right}
+    .publication-link:hover{color:#b30b10}
+    .publication-resource{font-size:.89rem;line-height:1.6;color:#526b78;margin:19px 0 0}
+    .publication-resource a{color:#005268;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:1000px){.pillar-grid{grid-template-columns:1fr 1fr}.pillar:last-child{grid-column:span 2}.pillar:last-child .pillar-topics{grid-template-columns:1fr 1fr}}
+    @media(max-width:760px){.pillar-grid{grid-template-columns:1fr}.pillar:last-child{grid-column:auto}.pillar:last-child .pillar-topics{grid-template-columns:1fr}.pillar{padding:25px}.research-goal{grid-template-columns:1fr;gap:12px;padding:24px}.publication{grid-template-columns:86px minmax(0,1fr);gap:13px 17px}.publication-link{grid-column:2;justify-self:start;text-align:left}}
+    @media(max-width:390px){.publication{grid-template-columns:1fr;gap:9px}.publication-meta{flex-direction:row;align-items:baseline;gap:12px}.publication-link{grid-column:1}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 </head>
@@ -136,7 +179,7 @@
   <header class="site-header">
     <nav class="container nav" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="QI Data Lab home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-copy"><strong>QI DATA LAB</strong><small>BAM · DIGITAL QUALITY INFRASTRUCTURE</small></span></a>
-      <div class="nav-links" id="nav-links"><a href="#work">Research areas</a><a href="#projects">Projects</a><a class="project-nav" href="https://github.com/QI-Data-Lab/DRMD" target="_blank" rel="noopener noreferrer">DRMD</a><a class="project-nav" href="https://github.com/QI-Data-Lab/VC4QI" target="_blank" rel="noopener noreferrer">VC4QI</a><a href="#applications">Applications</a><a href="#about">About</a></div>
+      <div class="nav-links" id="nav-links"><a href="#work">Research</a><a href="#projects">Projects</a><a class="project-nav" href="https://github.com/QI-Data-Lab/DRMD" target="_blank" rel="noopener noreferrer">DRMD</a><a class="project-nav" href="https://github.com/QI-Data-Lab/VC4QI" target="_blank" rel="noopener noreferrer">VC4QI</a><a href="#publications">Publications</a><a href="#applications">Applications</a><a href="#about">About</a></div>
       <a class="nav-cta" href="https://github.com/QI-Data-Lab" target="_blank" rel="noopener noreferrer">GitHub organization <svg aria-hidden="true"><use href="#icon-external"/></svg></a>
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false"><svg aria-hidden="true"><use href="#icon-menu"/></svg></button>
     </nav>
@@ -147,9 +190,9 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Research · Open tools · Digital trust</div>
-          <h1 id="hero-title">Making <span class="accent">quality evidence</span> work in a digital world.</h1>
-          <p class="lead">We develop research software and digital building blocks that make measurements, certificates, standards and technical evidence easier to exchange, interpret and trust.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore our projects</a><a class="button button-outline" href="#work">Research areas</a></div>
+          <h1 id="hero-title">Toward <span class="accent">Agentic QI</span>, grounded in trust.</h1>
+          <p class="lead">We research how digital documents and vocabularies, interoperable infrastructure and evidence-grounded AI can help software agents work with quality information responsibly.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">Explore the three pillars</a><a class="button button-outline" href="#projects">Open research projects</a></div>
           <div class="hero-affiliation" aria-label="Research context and partners"><span>Research context</span><a href="https://bam.de/en/topics/digital-materials-research/qi-digital" target="_blank" rel="noopener noreferrer">QI-Digital at BAM</a><a href="https://www.qi-digital.de/" target="_blank" rel="noopener noreferrer">QI-Digital platform</a></div>
         </div>
         <aside class="hero-projects" aria-labelledby="hero-projects-title">
@@ -174,13 +217,13 @@
     <div class="intro-band"><div class="container"><div class="eyebrow">The idea behind our work</div><p>Quality infrastructure connects measurements, testing, standards, conformity assessment and accreditation. We explore how its evidence can become <strong>machine-readable, traceable, interoperable and verifiable</strong> across organizations and products.</p></div></div>
 
     <section class="section work" id="work" aria-labelledby="work-title"><div class="container">
-      <div class="section-heading"><div class="eyebrow accent-dark">Research areas</div><h2 id="work-title">The digital building blocks of trust.</h2><p>Our work spans data models, software, trust mechanisms and AI-assisted workflows. We connect these pieces so quality information remains useful beyond its original document or system.</p></div>
-      <div class="theme-grid">
-        <article class="theme"><div class="theme-top"><span class="theme-number">FIELD / A</span><svg class="theme-symbol" aria-hidden="true"><use href="#icon-file"/></svg></div><h3>Machine-readable quality documents</h3><p>Structured digital certificates and reference material documents, with reusable schemas, validation rules and links to standards and metrology vocabularies.</p></article>
-        <article class="theme"><div class="theme-top"><span class="theme-number">FIELD / B</span><svg class="theme-symbol" aria-hidden="true"><use href="#icon-shield"/></svg></div><h3>Verifiable credentials &amp; trust</h3><p>Representing quality claims as verifiable evidence—and evaluating the issuer’s authority, scope, status and supporting trust chain.</p></article>
-        <article class="theme"><div class="theme-top"><span class="theme-number">FIELD / C</span><svg class="theme-symbol" aria-hidden="true"><use href="#icon-network"/></svg></div><h3>Interoperability &amp; data ecosystems</h3><p>Connecting quality data through Asset Administration Shells, federated data-space concepts such as Quality-X, and digital product passports.</p></article>
-        <article class="theme"><div class="theme-top"><span class="theme-number">FIELD / D</span><svg class="theme-symbol" aria-hidden="true"><use href="#icon-search"/></svg></div><h3>Evidence-grounded AI</h3><p>Document understanding, information extraction and agentic review workflows that keep answers linked to inspectable source material.</p></article>
+      <div class="section-heading"><div class="eyebrow accent-dark">Our research strategy</div><h2 id="work-title">Three pillars. One direction.</h2><p>Agentic quality infrastructure needs more than AI. It needs information with shared meaning, trusted systems that can exchange it, and AI workflows that can justify their actions. Our research connects all three.</p></div>
+      <div class="pillar-grid">
+        <article class="pillar"><div class="pillar-top"><span class="pillar-number">PILLAR / 01</span><svg class="pillar-symbol" aria-hidden="true"><use href="#icon-file"/></svg></div><h3>Digital documents &amp; vocabularies</h3><p>Make quality information understandable to software, with well-defined data models, common terms, and machine-checkable rules.</p><ul class="pillar-topics"><li>Digital reference material documents (DRMD) and certificates</li><li>Metrology vocabularies, units and semantics</li><li>Machine-actionable standards and validation</li></ul><div class="pillar-links"><a href="https://github.com/QI-Data-Lab/DRMD" target="_blank" rel="noopener noreferrer">Explore DRMD</a><a href="https://www.qi-digital.de/en/smart-standards" target="_blank" rel="noopener noreferrer">Smart Standards</a></div></article>
+        <article class="pillar"><div class="pillar-top"><span class="pillar-number">PILLAR / 02</span><svg class="pillar-symbol" aria-hidden="true"><use href="#icon-network"/></svg></div><h3>Infrastructure</h3><p>Build the interoperability and trust layer so digital evidence can move across assets, organizations and the product lifecycle.</p><ul class="pillar-topics"><li>Asset Administration Shells (AAS) and digital twins</li><li>Digital product and material passports (DPP)</li><li>Federated data spaces, Quality-X and verifiable credentials</li></ul><div class="pillar-links"><a href="https://github.com/QI-Data-Lab/VC4QI" target="_blank" rel="noopener noreferrer">Explore VC4QI</a><a href="https://netzwerke.bam.de/Netzwerke/Content/EN/Standard-Articles/Networks/QI-Digital/quality-x.html" target="_blank" rel="noopener noreferrer">Quality-X context</a></div></article>
+        <article class="pillar"><div class="pillar-top"><span class="pillar-number">PILLAR / 03</span><svg class="pillar-symbol" aria-hidden="true"><use href="#icon-search"/></svg></div><h3>AI</h3><p>Investigate AI-assisted quality workflows that can interpret evidence while preserving provenance, checks and human oversight.</p><ul class="pillar-topics"><li>Document understanding and structured extraction</li><li>Evidence-grounded retrieval and source tracing</li><li>Agent orchestration, validation and human review</li></ul><div class="pillar-links"><a href="https://github.com/QI-Data-Lab/Evidence-Tracer" target="_blank" rel="noopener noreferrer">Explore Evidence Tracer</a></div></article>
       </div>
+      <div class="research-goal"><div class="research-goal-label"><small>Research goal</small><strong>Agentic QI</strong></div><p>Quality workflows where software agents can discover, interpret, verify and exchange evidence across systems—with explicit provenance, policy checks and accountable human control. This is our research direction, not a claim of a deployed autonomous service.</p></div>
     </div></section>
 
     <section class="section projects" id="projects" aria-labelledby="projects-title"><div class="container">
@@ -191,6 +234,16 @@
         <article class="project-card"><div class="project-art trace-art" aria-hidden="true"><div class="trace-window"><span class="line"></span><span class="line short"></span><span class="line highlight"></span><span class="line"></span><span class="line short"></span></div><div class="trace-window"><span class="line highlight"></span><span class="line"></span><span class="line short"></span><span class="line"></span><span class="chip">SOURCE FOUND</span></div></div><div class="project-body"><p class="project-type">AI with provenance</p><h3>Evidence Tracer</h3><p>A local-first desktop research workbench for exploring PDF corpora, following references and locating evidence for or against a question with page-level source traces.</p><div class="tags"><span>Document AI</span><span>Provenance</span><span>Research demo</span></div><div class="project-links"><a class="repo-link" href="https://github.com/QI-Data-Lab/Evidence-Tracer" target="_blank" rel="noopener noreferrer">Repository <svg aria-hidden="true"><use href="#icon-external"/></svg></a></div></div></article>
       </div>
       <p class="project-note">These are research outputs, not certified production services. Check individual repositories for maturity, limitations, contribution guidance and licenses. <a href="https://github.com/orgs/QI-Data-Lab/repositories" target="_blank" rel="noopener noreferrer">Browse the full organization repository list</a>.</p>
+    </div></section>
+
+    <section class="section publications" id="publications" aria-labelledby="publications-title"><div class="container">
+      <div class="section-heading"><div class="eyebrow accent-dark">Selected outputs</div><h2 id="publications-title">Research &amp; publications.</h2><p>Read the published work behind our digital quality infrastructure research. We distinguish journal articles, full conference papers and abstracts, with links to their public records.</p></div>
+      <div class="publication-list">
+        <article class="publication"><div class="publication-meta"><span class="publication-year">2026</span><span class="publication-type">Journal article</span></div><div><h3>The digital reference material document (DRMD): a new member of the DCC-based family of quality documents</h3><p>Johannes van de Kreeke, Michael Melzer, Mehran Monavari, Silke Richter</p><p class="publication-venue">Accreditation and Quality Assurance · DOI: 10.1007/s00769-026-01730-9</p></div><a class="publication-link" href="https://doi.org/10.1007/s00769-026-01730-9" target="_blank" rel="noopener noreferrer">Journal / DOI</a></article>
+        <article class="publication"><div class="publication-meta"><span class="publication-year">2025</span><span class="publication-type">Conference paper</span></div><div><h3>The Digital Reference Material Document: From Paper Certificates to Interoperable Data Objects in Digital Quality Infrastructure</h3><p>Matthias Prellwitz, Claudia Koch, Silke Richter, Johannes van de Kreeke, Michael Melzer, Mehran Monavari</p><p class="publication-venue">IMEKO TC6 · M4DConf 2025</p></div><a class="publication-link" href="https://www.imeko.org/publications/tc6-2025/IMEKO-TC6-2025-067.pdf" target="_blank" rel="noopener noreferrer">Read paper (PDF)</a></article>
+        <article class="publication"><div class="publication-meta"><span class="publication-year">2024</span><span class="publication-type">Conference abstract</span></div><div><h3>Quality-X MVD: A Minimal Viable Dataspace for Quality Infrastructure</h3><p>Mehran Monavari (presenting author), Matthias Prellwitz, Claudia Koch</p><p class="publication-venue">4th International DCC Conference · Proceedings</p></div><a class="publication-link" href="https://oar.ptb.de/files/download/681c53eb53218de84f08e929" target="_blank" rel="noopener noreferrer">Read abstract (PDF)</a></article>
+      </div>
+      <p class="publication-resource">Further reading: <a href="https://www.qi-digital.de/fileadmin/user_upload/website/Roadmap/QID_Roadmap_V1.0_20251008_en.pdf" target="_blank" rel="noopener noreferrer">QI-Digital Roadmap (2025)</a>, a collaborative roadmap developed across the initiative.</p>
     </div></section>
 
     <section class="section contexts" id="applications" aria-labelledby="applications-title"><div class="container contexts-grid">
