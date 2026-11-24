@@ -89,11 +89,45 @@
     .about-link{border-bottom-color:#83b9d5}
     .about-link:first-child{border-top-color:#83b9d5}
     footer{background:#001724}
+    /* The hero's right panel is a pair of useful project entry points. */
+    .hero-projects{width:100%;padding:19px;border:1px solid rgba(142,201,227,.35);border-radius:13px;background:linear-gradient(150deg,rgba(10,64,89,.93),rgba(1,32,51,.94));box-shadow:0 24px 54px rgba(0,0,0,.18)}
+    .hero-projects-head{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:2px 3px 15px;border-bottom:1px solid rgba(182,222,238,.19)}
+    .hero-projects-head strong{font-size:.98rem;letter-spacing:-.015em;color:#fff}
+    .hero-projects-head span{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:#9dcede;font-weight:760;white-space:nowrap}
+    .hero-project-list{display:grid;gap:11px;margin:14px 0}
+    .hero-project{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;position:relative;min-height:142px;padding:17px 17px 16px;border:1px solid #3a728a;border-radius:9px;background:linear-gradient(110deg,#16465c,#103648);transition:transform .2s,background .2s,border-color .2s,box-shadow .2s}
+    .hero-project:hover{transform:translateY(-2px);background:linear-gradient(110deg,#1b526b,#124157);border-color:#71c9ed;box-shadow:0 9px 22px rgba(0,0,0,.15)}
+    .hero-project:focus-visible{outline:3px solid #7bdaff;outline-offset:2px}
+    .hero-project-icon{width:52px;height:52px;display:grid;place-items:center;border:1px solid #64afd0;border-radius:10px;background:#0a3850;color:#82d8ff}
+    .hero-project-icon svg{width:29px;height:29px}
+    .hero-project-vc .hero-project-icon{border-color:#de6b70;background:#4b2532;color:#ff9b9f}
+    .hero-project-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+    .hero-project-type{font-size:.69rem;line-height:1.25;letter-spacing:.07em;font-weight:780;color:#9fd1e6;text-transform:uppercase;padding-right:75px}
+    .hero-project-title{display:block;color:white;font-size:1.45rem;line-height:1.15;margin:5px 0 4px;letter-spacing:-.035em}
+    .hero-project-description{color:#c7dbe3;font-size:.85rem;line-height:1.45}
+    .hero-project-destination{display:inline-block;font-size:.76rem;font-weight:770;color:#9fe1fb;margin-top:9px}
+    .hero-project-vc .hero-project-destination{color:#ffb9bc}
+    .hero-project-badge{position:absolute;right:15px;top:14px;font-size:.67rem;font-weight:750;color:#cbe5ee;background:rgba(3,35,51,.7);border:1px solid rgba(135,201,226,.4);border-radius:4px;padding:2px 7px}
+    .hero-projects-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:2px 3px 0}
+    .hero-projects-footer a{font-size:.8rem;font-weight:730;color:#b9e6fb;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#668fa4}
+    .hero-projects-footer a:hover{color:white;text-decoration-color:white}
+    .project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .project-card:last-child{grid-column:auto}
+    .llm-art{gap:22px}
+    .llm-panel{position:relative;display:flex;flex-direction:column;gap:11px;width:38%;height:126px;padding:17px;border:1px solid #4f8ca6;border-radius:8px;background:#174257;transform:rotate(-4deg)}
+    .llm-panel:last-child{transform:rotate(4deg);background:#123d51;border-color:#009ee3}
+    .llm-panel-label{color:#a1d6e9;font:750 .69rem/1.2 ui-monospace,Consolas,monospace;letter-spacing:.1em}
+    .llm-line{display:block;width:86%;height:7px;background:#527e90;border-radius:3px}
+    .llm-line.short{width:58%}
+    .llm-panel:last-child .llm-line{background:#009ee3}
+    .llm-panel:last-child .llm-line.short{background:#d40f14}
+    @media(max-width:760px){.project-grid{grid-template-columns:1fr}}
     @media(max-width:1050px){.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#102d3a;padding:18px 32px 25px;flex-direction:column;align-items:flex-start;gap:17px;border-bottom:1px solid #3d6570}.nav-links.open{display:flex}.mobile-toggle{display:block}.nav-cta{margin-left:auto}}
     @media(max-width:1000px){.hero-grid{gap:26px}.hero h1{font-size:clamp(2.45rem,4.5vw,3.3rem)}.schematic{padding:15px}.flow-card{padding:12px;min-height:146px}}
     @media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:30px}.hero h1{max-width:610px}.schematic{max-width:660px;margin:0}.flow-card{min-height:122px}}
     @media(max-width:760px){.nav{height:70px}.nav-links{top:70px}.hero{padding:109px 0 42px}.hero h1{font-size:clamp(2.35rem,7.5vw,3.2rem)}.hero p.lead{font-size:1rem}.hero-affiliation{margin-top:24px}.intro-band .container{padding-top:24px;padding-bottom:24px;gap:10px}.intro-band p{font-size:1rem}}
     @media(max-width:540px){.brand{min-width:0}.nav-cta{display:none}.mobile-toggle{margin-left:auto}.schematic-top{flex-wrap:wrap}.flow-stack{grid-template-columns:1fr;gap:8px}.flow-card{flex-direction:row;align-items:center;min-height:0;padding:10px 12px;gap:12px}.flow-icon{flex:none}.flow-card strong{font-size:.86rem}.flow-card small{font-size:.74rem}.schematic-bottom{flex-wrap:wrap}.hero-affiliation>span{flex-basis:100%}}
+    @media(max-width:540px){.hero-projects{padding:13px}.hero-projects-head{flex-wrap:wrap;gap:3px}.hero-projects-head span{width:100%}.hero-project{grid-template-columns:42px minmax(0,1fr);gap:10px;padding:13px;min-height:0}.hero-project-icon{width:42px;height:42px}.hero-project-icon svg{width:23px;height:23px}.hero-project-title{font-size:1.26rem}.hero-project-description{font-size:.82rem}.hero-project-type{padding-right:0;max-width:190px}.hero-project-badge{right:10px;top:9px}}
     @media(max-width:390px){.hero h1{font-size:2.22rem}.brand-copy small{display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
@@ -129,15 +163,21 @@
           <div class="hero-actions"><a class="button button-primary" href="#projects">Explore our projects</a><a class="button button-outline" href="#work">Research areas</a></div>
           <div class="hero-affiliation" aria-label="Research context and partners"><span>Research context</span><a href="https://bam.de/en/topics/digital-materials-research/qi-digital" target="_blank" rel="noopener noreferrer">QI-Digital at BAM</a><a href="https://www.qi-digital.de/" target="_blank" rel="noopener noreferrer">QI-Digital platform</a></div>
         </div>
-        <aside class="schematic" aria-label="How quality evidence becomes reusable digital trust">
-          <div class="schematic-top"><span>From physical results to digital trust</span><span class="live">Our focus</span></div>
-          <div class="flow-stack">
-            <div class="flow-card"><div class="flow-icon"><svg aria-hidden="true"><use href="#icon-measure"/></svg></div><div><strong>Measurements &amp; materials</strong><small>Reliable results from the physical world</small></div></div>
-            <div class="flow-card"><div class="flow-icon"><svg aria-hidden="true"><use href="#icon-file"/></svg></div><div><strong>Machine-readable evidence</strong><small>Digital documents, certificates &amp; semantics</small></div></div>
-            <div class="flow-card"><div class="flow-icon"><svg aria-hidden="true"><use href="#icon-shield"/></svg></div><div><strong>Verifiable trust</strong><small>Authority, authenticity, status &amp; provenance</small></div></div>
-            <div class="flow-card"><div class="flow-icon"><svg aria-hidden="true"><use href="#icon-network"/></svg></div><div><strong>Connected applications</strong><small>Data spaces, digital twins &amp; product passports</small></div></div>
+        <aside class="hero-projects" aria-labelledby="hero-projects-title">
+          <div class="hero-projects-head"><strong id="hero-projects-title">Explore our open tools</strong><span>Featured projects</span></div>
+          <div class="hero-project-list">
+            <a class="hero-project hero-project-drmd" href="https://github.com/QI-Data-Lab/DRMD" target="_blank" rel="noopener noreferrer" aria-label="Explore the DRMD repository on GitHub">
+              <span class="hero-project-icon" aria-hidden="true"><svg><use href="#icon-file"/></svg></span>
+              <span class="hero-project-copy"><span class="hero-project-type">Digital reference materials</span><strong class="hero-project-title">DRMD</strong><span class="hero-project-description">Machine-readable reference material documents, schemas and validation.</span><span class="hero-project-destination">Explore the repository</span></span>
+              <span class="hero-project-badge" aria-hidden="true">GITHUB</span>
+            </a>
+            <a class="hero-project hero-project-vc" href="https://github.com/QI-Data-Lab/VC4QI" target="_blank" rel="noopener noreferrer" aria-label="Explore the VC4QI repository on GitHub">
+              <span class="hero-project-icon" aria-hidden="true"><svg><use href="#icon-shield"/></svg></span>
+              <span class="hero-project-copy"><span class="hero-project-type">Verifiable credentials</span><strong class="hero-project-title">VC4QI</strong><span class="hero-project-description">Open research tools for credential trust, issuer authority and verification.</span><span class="hero-project-destination">Explore the repository</span></span>
+              <span class="hero-project-badge" aria-hidden="true">GITHUB</span>
+            </a>
           </div>
-          <div class="schematic-bottom"><span>Evidence that travels with context</span><strong>INTEROPERABLE BY DESIGN</strong></div>
+          <div class="hero-projects-footer"><a href="https://qi-data-lab.github.io/VC4QI/demo/" target="_blank" rel="noopener noreferrer">Try the VC4QI demo</a><a href="#projects">See all projects</a></div>
         </aside>
       </div>
     </section>
@@ -155,11 +195,12 @@
     </div></section>
 
     <section class="section projects" id="projects" aria-labelledby="projects-title"><div class="container">
-      <div class="section-heading"><div class="eyebrow accent-dark">Open-source research</div><h2 id="projects-title">Projects you can explore.</h2><p>Three public repositories currently give a concrete view of our work—from structured materials data to trust verification and traceable document analysis.</p></div>
+      <div class="section-heading"><div class="eyebrow accent-dark">Open-source research</div><h2 id="projects-title">Projects you can explore.</h2><p>Four public research projects make our work tangible—from structured materials data and trust verification to traceable document analysis and AI-assisted extraction.</p></div>
       <div class="project-grid">
         <article class="project-card"><div class="project-art vc-art" aria-hidden="true"><div class="trust-chain"><div class="trust-node"><svg><use href="#icon-file"/></svg></div><div class="trust-edge"></div><div class="trust-node"><svg><use href="#icon-shield"/></svg></div><div class="trust-edge"></div><div class="trust-node"><svg><use href="#icon-network"/></svg></div></div></div><div class="project-body"><p class="project-type">Verifiable trust</p><h3>VC4QI</h3><p>Research framework and browser demonstrator for verifiable credentials in quality infrastructure. Explore how trust anchors, issuer authority, credential status and evidence affect a verifier’s decision.</p><div class="tags"><span>Verifiable Credentials</span><span>Trust chains</span><span>TypeScript / Python</span></div><div class="project-links"><a class="repo-link" href="https://github.com/QI-Data-Lab/VC4QI" target="_blank" rel="noopener noreferrer">Repository <svg aria-hidden="true"><use href="#icon-external"/></svg></a><a class="repo-link" href="https://qi-data-lab.github.io/VC4QI/demo/" target="_blank" rel="noopener noreferrer">Live demo <svg aria-hidden="true"><use href="#icon-external"/></svg></a></div></div></article>
         <article class="project-card"><div class="project-art xml-art" aria-hidden="true"><div class="xml-paper"><div><span class="tag">&lt;drmd&gt;</span></div><div class="indent"><span class="tag">&lt;material&gt;</span><span class="value"> reference </span><span class="tag">&lt;/material&gt;</span></div><div class="indent"><span class="tag">&lt;property&gt;</span></div><div class="indent" style="padding-left:35px"><span class="value">value · unit · uncertainty</span></div><div class="indent"><span class="tag">&lt;/property&gt;</span></div><div><span class="tag">&lt;/drmd&gt;</span></div></div></div><div class="project-body"><p class="project-type">Digital reference materials</p><h3>DRMD</h3><p>A Digital Reference Material Document specification and tooling: XML schema, examples, rendering, validation and an editor for structured reference-material information.</p><div class="tags"><span>XML / XSD</span><span>Metrology</span><span>Validation</span></div><div class="project-links"><a class="repo-link" href="https://github.com/QI-Data-Lab/drmd" target="_blank" rel="noopener noreferrer">Repository <svg aria-hidden="true"><use href="#icon-external"/></svg></a></div></div></article>
         <article class="project-card"><div class="project-art trace-art" aria-hidden="true"><div class="trace-window"><span class="line"></span><span class="line short"></span><span class="line highlight"></span><span class="line"></span><span class="line short"></span></div><div class="trace-window"><span class="line highlight"></span><span class="line"></span><span class="line short"></span><span class="line"></span><span class="chip">SOURCE FOUND</span></div></div><div class="project-body"><p class="project-type">AI with provenance</p><h3>Evidence Tracer</h3><p>A local-first desktop research workbench for exploring PDF corpora, following references and locating evidence for or against a question with page-level source traces.</p><div class="tags"><span>Document AI</span><span>Provenance</span><span>Research demo</span></div><div class="project-links"><a class="repo-link" href="https://github.com/QI-Data-Lab/Evidence-Tracer" target="_blank" rel="noopener noreferrer">Repository <svg aria-hidden="true"><use href="#icon-external"/></svg></a></div></div></article>
+        <article class="project-card"><div class="project-art llm-art" aria-hidden="true"><div class="llm-panel"><span class="llm-panel-label">CERTIFICATE</span><span class="llm-line"></span><span class="llm-line short"></span><span class="llm-line"></span></div><div class="llm-panel"><span class="llm-panel-label">STRUCTURED DATA</span><span class="llm-line short"></span><span class="llm-line"></span><span class="llm-line short"></span></div></div><div class="project-body"><p class="project-type">AI-assisted extraction</p><h3>LLM4QI</h3><p>Research into using large language models to extract structured reference-material information from certificate PDFs, with an emphasis on machine-readable outputs.</p><div class="tags"><span>LLMs</span><span>Certificates</span><span>Structured data</span></div><div class="project-links"><a class="repo-link" href="https://github.com/QI-Data-Lab/LLM4QI" target="_blank" rel="noopener noreferrer">Repository <svg aria-hidden="true"><use href="#icon-external"/></svg></a></div></div></article>
       </div>
       <p class="project-note">These are research outputs, not certified production services. Check individual repositories for maturity, limitations, contribution guidance and licenses. <a href="https://github.com/orgs/QI-Data-Lab/repositories" target="_blank" rel="noopener noreferrer">Browse the full organization repository list</a>.</p>
     </div></section>
