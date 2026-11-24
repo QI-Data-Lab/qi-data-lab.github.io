@@ -19,12 +19,11 @@ These are direct links to our code and tools. You do not need to visit the websi
 | **DRMD** — Digital Reference Material Document | XML schema, examples, rendering, validation and editor tooling for structured reference-material information. | [DRMD repository](https://github.com/QI-Data-Lab/DRMD) |
 | **VC4QI** — Verifiable Credentials for Quality Infrastructure | Research framework and demonstrator for examining issuer authority, credential status, trust chains and verification decisions. | [VC4QI repository](https://github.com/QI-Data-Lab/VC4QI) · [Live browser demo](https://qi-data-lab.github.io/VC4QI/demo/) |
 
-### More projects
+### Also explore
 
 | Project | What it offers | Explore |
 | --- | --- | --- |
 | **Evidence Tracer** | Local-first workbench for exploring PDF collections, following references and locating reviewable source evidence. | [Repository](https://github.com/QI-Data-Lab/Evidence-Tracer) |
-| **LLM4QI** | Research on using large language models to extract structured reference-material information from certificate PDFs. | [Repository](https://github.com/QI-Data-Lab/LLM4QI) |
 
 These are **research prototypes and outputs, not certified production services**. Check each repository for its maturity, documentation, limitations, license and contribution guidance.
 
