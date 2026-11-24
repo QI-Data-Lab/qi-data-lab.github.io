@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#081d2a">
+  <meta name="theme-color" content="#001f33">
   <meta name="description" content="QI Data Lab explores trustworthy digital quality infrastructure at BAM: verifiable credentials, digital reference material documents, interoperable data and evidence-grounded AI.">
   <title>QI Data Lab — Research for trustworthy digital quality</title>
   <style>
@@ -23,6 +23,45 @@
     @media(max-width:1000px){.hero-grid{gap:33px}.hero h1{font-size:clamp(3.1rem,5.8vw,5.5rem)}.schematic{padding:20px}.project-grid{grid-template-columns:repeat(2,1fr)}.project-card:last-child{grid-column:span 2}.project-card:last-child .project-art{height:170px}.contexts-grid{gap:50px}.nav-links{gap:20px}}
     @media(max-width:760px){.container{padding:0 22px}.site-header{position:absolute}.nav{height:75px}.brand-copy small{font-size:.49rem}.nav-cta{margin-left:auto;padding:8px 12px;font-size:.76rem}.nav-links{display:none;position:absolute;top:75px;left:0;right:0;background:#102d3a;padding:18px 22px 25px;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:1px solid #3d6570}.nav-links.open{display:flex}.mobile-toggle{display:block}.hero{padding:140px 0 66px}.hero-grid{grid-template-columns:1fr;gap:50px}.hero h1{font-size:clamp(3.4rem,10vw,5.8rem)}.hero p.lead{font-size:1.05rem}.schematic{margin:0;max-width:none}.intro-band .container{grid-template-columns:1fr;gap:13px;padding-top:31px;padding-bottom:31px}.intro-band p{font-size:1.06rem}.section{padding:77px 0}.section-heading h2{font-size:clamp(2.5rem,9vw,4rem)}.theme-grid{grid-template-columns:1fr}.theme{min-height:0;padding:29px}.theme .theme-top{margin-bottom:25px}.project-grid{grid-template-columns:1fr}.project-card:last-child{grid-column:auto}.project-art{height:168px}.contexts-grid{grid-template-columns:1fr;gap:36px}.practice-grid{grid-template-columns:1fr}.practice-item{padding:29px}.practice-item .practice-mark{margin-bottom:20px}.about{padding:67px 0}.about-grid{grid-template-columns:1fr;gap:37px}.footer-grid{flex-direction:column}.footer-links{gap:19px}}
     @media(max-width:390px){.brand-copy small{display:none}.nav-cta{font-size:.72rem}.nav-cta svg{display:none}.hero h1{font-size:3.1rem}.hero .eyebrow{font-size:.62rem}.flow-card{padding:12px}.flow-icon{width:36px;height:36px}.flow-card strong{font-size:.85rem}.flow-card small{font-size:.69rem}}
+    /* BAM-inspired palette: navy, red, cyan. Original QI Data Lab identity; no BAM logo. */
+    :root{--ink:#001f33;--deep:#001f33;--deep2:#005268;--mint:#009ee3;--teal:#005268;--paper:#f5f7f9;--line:#d8e2e9;--muted:#526672;--red:#d40f14;--cyan:#009ee3}
+    .accent-dark{color:#005268}
+    .hero{padding:154px 0 80px;min-height:690px}
+    .hero h1{font-size:clamp(2.95rem,4.65vw,5.1rem);line-height:1.06;max-width:690px;letter-spacing:-.052em}
+    .hero:after{width:550px;height:950px;right:-375px;top:-230px;transform:rotate(23deg);border:0;border-left:64px solid rgba(212,15,20,.16);border-right:110px solid rgba(0,158,227,.09);border-radius:0;box-shadow:none}
+    .brand-mark span:nth-child(4){background:var(--red)}
+    .nav-cta:hover{background:var(--cyan);color:var(--deep)}
+    .button-primary{background:var(--red);color:#fff}
+    .button-primary:hover{background:#a80b10}
+    .hero .eyebrow:before{background:var(--red)}
+    .flow-card:nth-child(even):before{background:var(--red);box-shadow:0 0 0 1px var(--red)}
+    .flow-card:nth-child(even) .flow-icon{color:#f05b61}
+    .intro-band{background:#ebf4f9;border-color:#d6e5ed}
+    .intro-band .eyebrow{color:#005268}
+    .theme:hover{background:#eef7fc}
+    .theme-symbol{color:#005268}
+    .projects{background:#f0f5f8}
+    .project-art{background:#00384d}
+    .project-art:before{background:radial-gradient(circle at 85% 20%,rgba(0,158,227,.23),transparent 55%)}
+    .vc-art .trust-node{border-color:#009ee3;box-shadow:0 0 25px rgba(0,158,227,.16)}
+    .vc-art .trust-edge{background:#009ee3}
+    .vc-art .trust-edge:after{border-left-color:var(--red)}
+    .xml-paper .value{color:#86d9ff}
+    .trace-window .chip{border-color:#4a9acb}
+    .project-type{color:#005268}
+    .tags span{background:#eaf4fa;color:#214b61;border-color:#d5e7f0}
+    .repo-link:hover{color:var(--red)}
+    .context-index{color:var(--red)}
+    .practice{background:#001f33}
+    .about{background:#dff0fa;border-top:6px solid var(--red)}
+    .about .eyebrow{color:#005268}
+    .about p{color:#001f33}
+    .about-link{border-bottom-color:#83b9d5}
+    .about-link:first-child{border-top-color:#83b9d5}
+    footer{background:#001724}
+    @media(max-width:1000px){.hero h1{font-size:clamp(2.9rem,5vw,4.7rem)}}
+    @media(max-width:760px){.hero{padding:130px 0 64px}.hero h1{font-size:clamp(2.7rem,8vw,4.2rem)}}
+    @media(max-width:390px){.hero h1{font-size:2.65rem}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 </head>
